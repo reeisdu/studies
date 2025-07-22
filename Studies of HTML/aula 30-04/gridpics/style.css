@@ -1,0 +1,67 @@
+/* 1. Resetando margens e preenchimentos padrão */
+body {
+    margin: 0;
+    padding: 0;
+    /* 2. Definindo fonte padrão */
+    font-family: Arial, sans-serif;
+}
+
+/* 3. Estilizando cabeçalho e rodapé */
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 4. Estilizando os itens da grade */
+.grid-item {
+    border: 5px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden; /* Para garantir que as bordas arredondadas funcionem */
+}
+
+/* 5. Configurando o grid container */
+.grid-container {
+    display: grid;
+    /* 5 colunas simétricas */
+    grid-template-columns: repeat(4, 1fr);
+    /* 7. Centralizando itens e adicionando espaçamento */
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* 6.1 Ajustando largura das imagens */
+.grid-item img {
+    width: 100%;
+    height: auto;
+    /* 8. Removendo margem inferior padrão */
+    display: block;
+}
+
+/* 9. Efeito de hover */
+.grid-item:hover {
+    transform: scale(1.05);
+    /* 10. Suavizando a transição */
+    transition: transform 0.3s;
+}
+
+/* 12. Itens grandes que ocupam 2 colunas */
+.large {
+    grid-column: span 2;
+}
+
+/* 13. Media query para telas até 1024px */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* 14. Media query para telas até 720px */
+@media (max-width: 720px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

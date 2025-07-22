@@ -1,0 +1,38 @@
+body{
+background-color: rgb(255, 103, 103);
+
+
+}
+
+fieldset, legend {
+    background-color: aliceblue;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.tipo1{
+    background-color: rgb(76, 197, 228);
+    width: 400px;
+    border: 25px solid rgb(91, 176, 209);    
+    border-radius: 30px;
+    margin: 20px 50px 20px 50px ;
+    
+    
+}
+
+.tipo2{
+    background-color: rgb(255, 194, 61);
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 50px;
+    padding-top: 40px;
+    padding-right: 10px;
+    padding-left: 40px;
+    text-align: left;
+    padding-bottom: 20px;
+
+    border-color: rgb(15, 15, 15);
+    border-width: 2px;
+    border-style: dotted;
+    border-radius: 20px;
+}
