@@ -1,0 +1,38 @@
+/* Smartphone Portrait */
+
+
+/* Smartphone Landscape */
+@media only screen and  (min-width: 576px){
+    body {
+        background-color: aquamarine;
+    }
+}
+
+/* Tablet Portrait */
+
+@media only screen and (min-width: 768px){
+    body{
+        background-color: rgb(102, 183, 255);
+    }
+}
+
+/* Tablet Landscape */
+
+@media only screen and (min-width: 992px){
+    body{
+        background-color: rgb(255, 113, 113);
+    }
+}
+
+/* PC */
+
+@media only screen and (min-width: 1200px){
+    body{
+        background-color: snow;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,1 @@
+frutas = [maçã, acabate, abacaxi, kiwi, banana];

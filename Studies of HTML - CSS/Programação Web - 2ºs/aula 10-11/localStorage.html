@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h2>"Verificação com Modernizr"</h2>
+        <input type="text" id="nome" placeholder="Digite sue nome">
+        <button onclick = "salvar()">Salvar</button>
+
+        <script>
+            function salvar() {
+                if (Modernizr.localstorage) {
+                    let nome = document.getElementById("nome").value;
+                    localStorage.setItem("usuario", nome);
+                    alert("Sucesso! O navegador suporta localStorage.")
+                } else {
+                    alert("Este navegador não suporta localStorage");
+                }
+            }
+        </script>  
+    </main>
+</body>
+</html>

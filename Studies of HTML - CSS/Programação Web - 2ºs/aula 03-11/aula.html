@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <img id="foto" src="fotos/images.jpg" width="250">
+        <script>
+            let imagem = document.getElementById("foto");
+            imagem.addEventListener("mouseover", function() {
+            imagem.src = "fotos/images.jpg";
+            });
+            imagem.addEventListener("mouseout", function() {
+            imagem.src = "fotos/download (1).jpg";
+            });
+        </script>
+    </main>
+</body>
+</html>
