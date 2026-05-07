@@ -1,0 +1,44 @@
+MER - OFICINA MECÂNICA:
+
+
+
+Entidades:
+
+Cliente (id_cliente, nome, telefone);
+Veiculo (id_veiculo, placa, modelo, id_cliente);
+Mecanico (id_mecanico, nome);
+OrdemServiço (id_ordem, data, id_veiculo, id_mecanico);
+Servico (id_serviço, descrição, custo_unitario);
+Peca (id_peca, nome, preço);
+
+
+Relacionamentos:
+
+OrdemServiço (Tem Serviço (N:N));
+Serviço (usa Peça (N:N));
+
+
+
+
+
+
+MER - LIVRARIA:
+
+
+
+Entidades:
+
+Cliente (id_cliente, nome, email);
+Livro (id_livro, titulo, preco, estoque);
+Pedido (id_pedido, data, status, id_cliente);
+Funcionario (id_funcionario, nome);
+Editora (id_editora, nome);
+
+Relacionamentos:
+
+Pedido (tem livro (N:N));
+Editora (fornece o livro (1:N));
+
+
+
+
